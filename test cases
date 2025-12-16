@@ -1,0 +1,8 @@
+Full traceability:
+  a. Create test cases for:
+critical API scenarios + Login
+key user journeys
+auth/security and performance acceptance criteria
+   b. In Azure DevOps:
+Associate automated tests (from your .NET / Playwright projects) to these test cases.
+That way, when someone runs a test plan, they’re effectively triggering the corresponding         automated tests in the pipeline, and all results flow back into Test Plans.
