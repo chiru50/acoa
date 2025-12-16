@@ -1,0 +1,18 @@
+Portal based API testing – Functional & Regression + Frontend Testing
+Backend test - Unit & Component tests: * It needs two setup in azure devops pipeline and in the code base. 
+            - Code needs a test framework
+            - Pipeline runs .Net test and NPM Test and publishes the result.                dotnet test + PublishTestResults@2
+      * xUnit or nUnit test.       * Usual tool combo is xUnit + Nsubstitute + Fluent assertions.
+b. Frontend test (React) – Unit & Component tests.
+      * Unit test:
+           - Jest + React testing library (in pipeline)
+      * Component / UI interaction tests:
+           - Playwright for E2E and optional component for higher level at browser level.
+c. Pipeline:
+         * backend.yml
+         * frontend.yml  (for react tests)
+d. Regression testing:         * Postman: to automate regression collections
+         * Azure DevOps Test Plans – for manual regression tracking.         * Azure Pipelines – integrate regression test runs on post-deployment.
+
+
+
